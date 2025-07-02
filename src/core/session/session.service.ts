@@ -10,7 +10,7 @@ interface ISessionData {
   expiresAt: number;
 }
 
-export class SessionService implements ISessionService {
+class SessionService implements ISessionService {
   private sessions: Map<string, ISessionData> = new Map();
   private cleanupTimer: NodeJS.Timeout;
 
@@ -54,3 +54,5 @@ export class SessionService implements ISessionService {
     clearInterval(this.cleanupTimer);
   }
 }
+
+export const sessionService = new SessionService();

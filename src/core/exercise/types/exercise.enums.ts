@@ -1,7 +1,7 @@
 export const bodyParts = [
   "back", "cardio", "chest", "lower arms", "lower legs", "neck",
   "shoulders", "upper arms", "upper legs", "waist", "all"
-] as const;
+];
 
 export const equipments = [
   "assisted", "band", "barbell", "body weight", "bosu ball", "cable",
@@ -10,13 +10,13 @@ export const equipments = [
   "roller", "rope", "skierg machine", "sled machine", "smith machine",
   "stability ball", "stationary bike", "stepmill machine", "tire", "trap bar",
   "upper body ergometer", "weighted", "wheel roller", "all"
-] as const;
+];
 
 export const targets = [
   "abductors", "abs", "adductors", "biceps", "calves", "cardiovascular system",
   "delts", "forearms", "glutes", "hamstrings", "lats", "levator scapulae",
   "pectorals", "quads", "serratus anterior", "spine", "traps", "triceps", "upper back"
-] as const;
+];
 
 export type BodyPart = typeof bodyParts[number];
 export type Equipment = typeof equipments[number];
